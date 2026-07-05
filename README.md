@@ -8,3 +8,4 @@ and vulnerability research.
 | Challenge | Platform | Arch | Difficulty | Topics |
 |-----------|----------|------|------------|--------|
 | [easy_reverse](crackmes/easy_reverse/) | Linux | x86-64 | ★☆☆ | argv parsing, format check |
+| [Sh4ll1](crackmes/Sh4ll1/) | Linux | x86-64 | ★☆☆ | C++ bug, use-of-uninitialized-variable |
