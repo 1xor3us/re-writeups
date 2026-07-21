@@ -55,7 +55,7 @@ Key takeaways from recon:
 - **NX enabled / No canary / Partial RELRO** → not relevant for a keygen-style crackme, but noted.
 - **Strings** reveal both success and failure messages (`You are a Code Linux Memeber!!` / `You Are Not...`) and a likely anti-debug hint (`Alert! I hate debugging stuff`). The success/failure strings give me anchor points to trace back to the validation logic.
 
-raw strings output was noisy given the static linking, so I filtered it with a small script ([strings_filter.py]((../../tools/strings_filter.py))) to surface the meaningful messages.
+raw strings output was noisy given the static linking, so I filtered it with a small script ([strings_filter.py](../../tools/strings_filter.py)) to surface the meaningful messages.
 
 
 This hint, combined with the static + stripped nature, tells me I'll get far with static analysis but will eventually need dynamic analysis to confirm the logic — and the anti-debug will have to be dealt with before I can run the binary under a debugger.
